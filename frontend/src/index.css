@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  background-color: rgb(12, 157, 46);
+  color: #FAFAFF;
+  height: 15vh;
+}
+
+.home-container h1 {
+  color: #30343F;
+}
+
+a {
+  color: #FAFAFF;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.home {
+  display: flex;
+}
+
+.home-img {
+  flex-basis: 50%;
+  background-image: url('./assets/home-img.jpg');
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  gap: 2em;
+  flex-basis: 50%;
+}
+
+.combo-container, .category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+}
+
+.category-container {
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.combo, .category, .truck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #30343F;
+  border-radius: 5px;
+  gap: 1em;
+  padding: 2em;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.img-front {
+  height: 150px;
+  width: 200px;
+}
+
+.register-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2em; */
+  padding: 2em;
+}
+
+.radio-buttons {
+  padding: 1.5em;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  border-radius: 5px;
+  border: 1px solid #30343F;
+  width: 40%;
+}
+
+.radio-buttons * {
+  font-size: 1.25rem;
+}
+
+.form-container {
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+  width: 40%;
+  padding: 1.5em;
+  border: 1px solid #30343F;
+  border-radius: 5px;
+  gap: 1em;
+}
+
+.form-sub {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.form-sub * {
+  font-size: 1rem;
+  padding: .5em;
+}
+
+.search-box {
+  padding: .25em 8px;
+}
+
+.truck-management {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.truck {
+  width: 20vw;
+}
+
+.truck > div {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-btn {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #121212;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  outline: none;
+  padding: 1rem 1.2rem;
+  margin: 2em 0 0 0;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.logout-btn {
+  background-color: rgb(12, 157, 46);
+  padding: 10px 15px;
+  border-radius: 1rem;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  transition-property: background-color 0.3s, color 0;
+}
+
+.logout-btn:hover {
+  background-color: white;
+  color: rgb(12, 157, 46);
+}
+
+.form-btn:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.none {
+  color: inherit;
+}
+
+.notification {
+  text-align: center;
+  background-color: #FFD700;
+  color: #30343F;
+  font-size: 1.5rem;
+  padding: .5em 0;
+}
+
+.error {
+  color: red;
+  border: 1px solid red;
+}
+
+
+/* CSS for stock item page */
+
+.main{
+  width: 100%;
+}
+.main .row{
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+}
+
+.main .slider{
+  height: 80vh;
+  display: flex;
+}
+
+
+.main img{
+  border: 2px solid gainsboro;
+  height: 400px;
+  width: 400px
+}
+.main p{
+  margin-bottom: 20px;
+}
+.main .brand{
+  background: #008000;
+  width: fit-content;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+.main h2{
+  font-size: 45px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.main .rating{
+  display: flex;
+  height: 15px;
+}
+.main .rating .fa{
+  color: #008000;
+}
+.main .price{
+  color: #150e62;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.main input{
+  width: 30px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main .desc{
+   width: 90%;
+  margin: 0 auto 40px;
+  font-size: 20px;
+ 
+ 
+}
+.main .desc .row{
+  padding-top:10px;
+  width: 100%;
+  height: auto;
+}
+.main .columns{
+  flex-basis: 22%;
+  height: 100%;
+}
+
+.main .details{
+  margin-top: 20px;
+}
+.main .details p{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.main .details .rating{
+  margin: 10px 0;
+}
+
+.main .path{
+  color: #555;
+}
+
+.shop-btn-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px
+}
+
+.shop-btn-group button{
+  padding: .5em;
+}
+
+/* end of stock item page */
+
+/* CSS for shopping page */
+.container {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.product {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.product p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.product-rating span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.product-rating .stars {
+  display: flex;
+  align-items: center;
+}
+
+.product-rating .star {
+  font-size: 24px;
+  color: #FFD700;
+  margin-right: 5px;
+}
+
+.product-rating .star:last-of-type {
+  margin-right: 0;
+}
+
+/* .product button {
+  background-color: white;
+  color: #30343F;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+/* .product button:hover {
+  background-color: #30343F;
+  color: white
+} */
+
+.price-span {
+  color:black;
+  font-weight:bold;
+  background-color: yellow;
+}
+/* End of shopping page */
+
+/* CSS for cart page */
+
+.cart-title{
+  margin-top: 2em 0;
+  text-align: center;  
+  font-size: 50px;
+  font-weight: 600;;
+}
+
+.cart-page{
+  margin: auto;
+}
+
+table{
+  width:70%;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th{
+  text-align: left;
+  padding: 5px;
+  background: rgb(12, 157, 46);
+  color: white;
+  font-weight: normal;
+
+}
+
+td{
+  padding: 10px 5px;
+}
+
+td a{
+  color:rgb(218, 41, 41);
+  font-size: 12px;
+  }
+
+td img{
+  width : 80px;
+  height : 80px;
+  margin-right: 10px;
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table{
+  
+  border-top: 3px solid rgb(26, 31, 69);
+  width:100%;
+  max-width: 480px;
+  margin: 0 15% auto 0;
+ }
+
+ td:last-child{
+  text-align: right;
+}
+
+
+th:last-child{
+  text-align: right;
+}
+
+
+/* End of cart page */
+
+/* css subscription */
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.plan {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 120px 20px 120px 20px ;
+  margin: 10px;
+  text-align: center;
+  flex-basis: 300px;
+  box-shadow: 5px 5px 10px rgb(183, 111, 183);
+}
+
+.plan h2 {
+  margin-top: 0;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan li {
+  margin: 10px 0;
+}
+
+.plan button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.plan button:hover {
+  background-color: #191a19;
+}
+
+/* end subscription */
+
+.comboImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.comboImages img {
+  height: 200px;
+  width: 200px
+}
